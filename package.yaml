@@ -1,0 +1,22 @@
+name: wasm-machine
+version: 0.1.0.0
+github: "ranjitjhala/wasm-machine"
+license: MIT 
+author: "Ranjit Jhala"
+maintainer: "rjhala@eng.ucsd.edu"
+copyright: "2020 Ranjit Jhala"
+
+extra-source-files:
+  - README.md
+
+description: Please see the README on GitHub at <https://github.com/ranjitjhala/wasm-machine>
+
+dependencies:
+  - liquid-base
+  - liquid-prelude
+  - liquidhaskell >= 0.8.10
+
+library:
+  source-dirs: src
+  ghc-options: -fplugin=LiquidHaskell
+
